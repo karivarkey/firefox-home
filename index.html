@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/1792a53f38.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
   </head>
-  <body>
+  <body onload="datetime()">
     <div class="container">
-      <div
-        class="container1"
-        onmouseleave="reducelinespacing(0)"
-        onmouseenter="reducelinespacing(1)"
-      >
+      <div class="search-box">
         <img class="search-icon" src="./src/search.png" alt="SEARCH ICON" />
         <input
           type="text"
@@ -24,9 +24,28 @@
           onkeydown="search(event)"
         />
       </div>
-      <div class="inner-container">
-        <div class="container2">333</div>
-        <div class="container3">adads</div>
+      <div class="cards">
+        <div class="card card1">
+          <a href="https://reddit.com"
+            ><i class="fa-brands fa-reddit-alien icon"></i
+          ></a>
+          <a href="https://youtube.com"
+            ><i class="fa-brands fa-youtube icon"></i
+          ></a>
+          <a href="https://web.whatsapp.com"
+            ><i class="fa-brands fa-whatsapp icon"></i
+          ></a>
+          <a href="https://mail.google.com"
+            ><i class="fa-solid fa-envelope-open-text icon"></i
+          ></a>
+          <a href="https://chat.openai.com"
+            ><i class="fa-solid fa-robot icon"></i
+          ></a>
+        </div>
+        <div class="card card2">
+          <p class="time" id="time">12:30 PM</p>
+          <p class="date" id="date">30 JAN 2024</p>
+        </div>
       </div>
     </div>
   </body>
